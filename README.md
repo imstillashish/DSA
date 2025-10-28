@@ -53,13 +53,24 @@
 
 ---
 
+## 📖 **About This Repository**
+
+Welcome to **The DSA Times** - a comprehensive learning hub dedicated to Data Structures, Algorithms, and Programming Fundamentals. This repository serves as a curated collection of in-depth documentation, interactive tutorials, and practical code examples designed to help programmers master essential computer science concepts.
+
+Whether you're a beginner starting your coding journey or an experienced developer brushing up on fundamentals, you'll find well-structured, beautifully formatted resources with:
+
+- 📝 **Detailed Documentation** - In-depth explanations with real-world context
+- 💡 **Code Examples** - Practical, runnable code with output demonstrations
+- 🎨 **Visual Learning** - Diagrams, flowcharts, and illustrations
+- 🌐 **Web-Optimized** - Styled HTML with syntax highlighting and interactivity
+
 ## 🚀 **Quick Navigation**
 
 ```ascii
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
 │   🏠 Homepage       →  https://imstillashish.github.io/DSA │
-│   📘 C++ Guide      →  cpp_fundamentals_notes.html         │
+│   📘 C++ Guide      →  https://imstillashish.github.io/DSA/cpp_fundamentals_notes.html │
 │   💾 Repository     →  github.com/imstillashish/DSA        │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
@@ -96,24 +107,6 @@
 ![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-222222?style=flat-square&logo=github&logoColor=white)
 
 </div>
-
----
-
-## 📂 **Repository Structure**
-
-```
-DSA/
-├── 📄 index.html                          # Newspaper-themed landing page
-├── 📘 cpp_fundamentals_notes.html         # Full C++ guide (styled)
-├── 📝 cpp_fundamentals_notes.md           # Markdown source
-├── 📦 cpp_fundamentals_notes.docx         # Word document version
-├── 🔧 convert_to_html.py                  # HTML converter script
-├── 🔧 convert_to_docx.py                  # DOCX converter script
-└── 📁 parts/                              # Split documentation
-    ├── part_1.md
-    ├── part_2.md
-    └── README.md
-```
 
 ---
 
