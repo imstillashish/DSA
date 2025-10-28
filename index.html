@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DSA Learning Hub</title>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>The DSA Times - Daily Programming Digest</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -13,235 +13,223 @@
         }
 
         body {
-            font-family: 'Barlow', sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-family: 'Crimson Text', serif;
+            background: #f4f1e8;
+            color: #1a1a1a;
             padding: 20px;
-        }
-
-        .container {
-            max-width: 900px;
-            width: 100%;
-        }
-
-        .header {
-            text-align: center;
-            color: white;
-            margin-bottom: 50px;
-            animation: fadeInDown 0.8s ease;
-        }
-
-        .header h1 {
-            font-size: 3.5em;
-            font-weight: 700;
-            margin-bottom: 15px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        .header p {
-            font-size: 1.3em;
-            font-weight: 300;
-            opacity: 0.95;
-        }
-
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
-            animation: fadeInUp 0.8s ease 0.3s backwards;
-        }
-
-        .card {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            cursor: pointer;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-        }
-
-        .card-icon {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 25px;
-            font-size: 2em;
-        }
-
-        .card-title {
-            font-size: 1.8em;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: #2d3748;
-        }
-
-        .card-description {
-            font-size: 1.1em;
-            color: #718096;
             line-height: 1.6;
-            margin-bottom: 20px;
         }
 
-        .card-meta {
+        .newspaper {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border: 1px solid #ddd;
+        }
+
+        .masthead {
+            border-bottom: 4px double #000;
+            padding: 30px 40px 20px;
+            text-align: center;
+            background: #fff;
+        }
+
+        .masthead-top {
             display: flex;
-            gap: 15px;
-            font-size: 0.9em;
-            color: #a0aec0;
-            margin-bottom: 20px;
+            justify-content: space-between;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            color: #666;
         }
 
-        .card-meta span {
-            display: flex;
-            align-items: center;
-            gap: 5px;
+        .newspaper-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 72px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin: 20px 0 10px;
+            text-transform: uppercase;
         }
 
-        .card-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 12px 25px;
-            border-radius: 10px;
-            font-weight: 500;
-            transition: all 0.3s ease;
+        .tagline {
+            font-style: italic;
+            font-size: 16px;
+            color: #444;
+            border-top: 1px solid #000;
+            border-bottom: 1px solid #000;
+            padding: 8px 0;
+            margin-top: 15px;
         }
 
-        .card:hover .card-button {
-            transform: translateX(5px);
+        .content {
+            padding: 40px;
+            column-count: 2;
+            column-gap: 40px;
+            column-rule: 1px solid #ddd;
+        }
+
+        .article {
+            break-inside: avoid;
+            margin-bottom: 40px;
+            page-break-inside: avoid;
+        }
+
+        .article-header {
+            border-bottom: 2px solid #000;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+        }
+
+        .article-category {
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #666;
+            font-weight: 600;
+        }
+
+        .article-title {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 8px 0;
+            color: #000;
+        }
+
+        .article-meta {
+            font-size: 12px;
+            color: #888;
+            font-style: italic;
+            margin-top: 8px;
+        }
+
+        .article-content {
+            font-size: 17px;
+            text-align: justify;
+            margin-bottom: 15px;
+            hyphens: auto;
+        }
+
+        .article-content::first-letter {
+            font-size: 52px;
+            font-weight: 700;
+            float: left;
+            line-height: 48px;
+            margin: 2px 8px 0 0;
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        .read-more {
+            display: inline-block;
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 2px solid #000;
+            padding: 8px 20px;
+            transition: all 0.2s;
+            margin-top: 10px;
+        }
+
+        .read-more:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        .coming-soon {
+            opacity: 0.5;
+        }
+
+        .coming-soon .read-more {
+            pointer-events: none;
+            border-color: #999;
+            color: #999;
         }
 
         .footer {
+            border-top: 4px double #000;
+            padding: 20px 40px;
             text-align: center;
-            color: white;
-            margin-top: 50px;
-            font-size: 0.95em;
-            opacity: 0.9;
-            animation: fadeIn 1s ease 0.6s backwards;
+            font-size: 12px;
+            background: #f9f9f9;
         }
 
         .footer a {
-            color: white;
+            color: #000;
             text-decoration: none;
             font-weight: 600;
-            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-            transition: border-color 0.3s ease;
         }
 
         .footer a:hover {
-            border-bottom-color: white;
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+            text-decoration: underline;
         }
 
         @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2.5em;
+            .content {
+                column-count: 1;
+                padding: 20px;
             }
 
-            .header p {
-                font-size: 1.1em;
+            .newspaper-title {
+                font-size: 42px;
             }
 
-            .cards-grid {
-                grid-template-columns: 1fr;
+            .article-title {
+                font-size: 24px;
             }
 
-            .card {
-                padding: 30px;
+            .masthead {
+                padding: 20px;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>📚 DSA Learning Hub</h1>
-            <p>Your comprehensive guide to Data Structures & Algorithms</p>
+    <div class="newspaper">
+        <div class="masthead">
+            <div class="masthead-top">
+                <span>Vol. 1 • No. 1</span>
+                <span>Tuesday, October 28, 2025</span>
+                <span>Free Access</span>
+            </div>
+            <h1 class="newspaper-title">The DSA Times</h1>
+            <p class="tagline">"All the Code That's Fit to Print" — Programming Knowledge Daily</p>
         </div>
 
-        <div class="cards-grid">
-            <a href="cpp_fundamentals_notes.html" class="card">
-                <div class="card-icon">💻</div>
-                <h2 class="card-title">C++ Fundamentals</h2>
-                <div class="card-meta">
-                    <span>📖 Complete Guide</span>
-                    <span>⏱️ ~2 hours</span>
+        <div class="content">
+            <article class="article">
+                <div class="article-header">
+                    <div class="article-category">Programming • Special Report</div>
+                    <h2 class="article-title">C++ Fundamentals: A Complete Investigation</h2>
+                    <div class="article-meta">By Staff Reporter • Reading Time: 2 hours</div>
                 </div>
-                <p class="card-description">
-                    Master C++ programming from basics to advanced concepts. Includes data types, 
-                    control structures, functions, OOP, STL, and more with practical examples and diagrams.
-                </p>
-                <div class="card-button">
-                    Start Learning →
+                <div class="article-content">
+                    Master the foundational language of modern computing. Our comprehensive coverage examines everything from primitive data types to advanced object-oriented programming paradigms. This exhaustive report includes control structures, functions, the Standard Template Library, and practical examples with visual diagrams for clarity. Whether you're starting your programming journey or refreshing core concepts, this guide provides the essential knowledge every developer needs.
                 </div>
-            </a>
+                <a href="cpp_fundamentals_notes.html" class="read-more">Read Full Article →</a>
+            </article>
 
-            <!-- Placeholder for future content -->
-            <div class="card" style="opacity: 0.6; cursor: default; pointer-events: none;">
-                <div class="card-icon">🔜</div>
-                <h2 class="card-title">Coming Soon</h2>
-                <div class="card-meta">
-                    <span>🚧 In Progress</span>
+            <article class="article coming-soon">
+                <div class="article-header">
+                    <div class="article-category">Development • Breaking News</div>
+                    <h2 class="article-title">More Coverage Coming Soon</h2>
+                    <div class="article-meta">By Editorial Board • Status: In Development</div>
                 </div>
-                <p class="card-description">
-                    More comprehensive guides on algorithms, data structures, and advanced topics are on the way!
-                </p>
-                <div class="card-button">
-                    Stay Tuned →
+                <div class="article-content">
+                    Our newsroom is working diligently on additional comprehensive guides covering algorithms, advanced data structures, and specialized programming topics. Stay tuned for breaking coverage of sorting techniques, graph algorithms, dynamic programming strategies, and much more from our technical correspondents.
                 </div>
-            </div>
+                <span class="read-more">Story Developing →</span>
+            </article>
         </div>
 
         <div class="footer">
-            <p>
-                Built with 💜 by <a href="https://github.com/imstillashish" target="_blank">@imstillashish</a>
-            </p>
+            <p>Published by <a href="https://github.com/imstillashish" target="_blank">@imstillashish</a> • All Rights Reserved</p>
         </div>
     </div>
 </body>
