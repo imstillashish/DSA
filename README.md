@@ -32,7 +32,7 @@
 - 📊 **Visual Diagrams** - Mermaid flowcharts & illustrations
 - ⚡ **Interactive HTML** - Styled documentation with syntax highlighting
 
-**[📰 Read Full Article →](https://imstillashish.github.io/DSA/cpp_fundamentals_notes.html)**
+**[📰 Read Full Article →](https://imstillashish.github.io/The-DSA-Times/cpp_fundamentals_notes.html)**
 
 </td>
 <td width="50%">
@@ -69,9 +69,9 @@ Whether you're a beginner starting your coding journey or an experienced develop
 ```ascii
 ┌─────────────────────────────────────────────────────────────┐
 │                                                             │
-│   🏠 Homepage       →  https://imstillashish.github.io/DSA │
-│   📘 C++ Guide      →  https://imstillashish.github.io/DSA/cpp_fundamentals_notes.html │
-│   💾 Repository     →  github.com/imstillashish/DSA        │
+│   🏠 Homepage       →  https://imstillashish.github.io/The-DSA-Times │
+│   📘 C++ Guide      →  https://imstillashish.github.io/The-DSA-Times/cpp_fundamentals_notes.html │
+│   💾 Repository     →  github.com/imstillashish/The-DSA-Times │
 │                                                             │
 └─────────────────────────────────────────────────────────────┘
 ```
@@ -183,7 +183,7 @@ Contributions are welcome! Feel free to:
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-@imstillashish-181717?style=for-the-badge&logo=github)](https://github.com/imstillashish)
-[![Website](https://img.shields.io/badge/Website-DSA_Times-00599C?style=for-the-badge&logo=google-chrome&logoColor=white)](https://imstillashish.github.io/DSA)
+[![Website](https://img.shields.io/badge/Website-DSA_Times-00599C?style=for-the-badge&logo=google-chrome&logoColor=white)](https://imstillashish.github.io/The-DSA-Times)
 
 </div>
 
